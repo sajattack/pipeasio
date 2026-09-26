@@ -7,7 +7,8 @@
 # their own prefix.  Plain names win when several are present (issue #20
 # follow-up: Debian could not even configure without hand edits).
 set(_wine_tool_paths /usr/lib/wine
-    /opt/wine-devel/bin /opt/wine-stable/bin /opt/wine-staging/bin)
+    /opt/wine-devel/bin /opt/wine-stable/bin /opt/wine-staging/bin
+    /work/stage/opt/wine-d2d1-nspa-11.13/bin)
 find_program(WINEBUILD
     NAMES winebuild winebuild-stable winebuild-development winebuild-staging
     PATHS ${_wine_tool_paths} REQUIRED)
